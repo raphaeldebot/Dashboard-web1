@@ -333,7 +333,18 @@ const REGEX = {
 $(".tab").on("click", function() {
 
     // Ton code ici ↓
+$(".tab").removeClass("active");
+   $(this)
+    .addClass("active");
 
+const form= $(this).data("form");
+     $("#signupForm , #loginForm")
+    .hide();
+
+    $("#" + form)
+    .fadeIn(300);
+
+    
 });
 
 
